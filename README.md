@@ -17,7 +17,17 @@ $ tree /tmp/scws
 ## 安装sphinx
 源码存储在 https://github.com/hetao29/sphinx ，这是官方的分支
 ```bash
+$ cd /tmp
+$ git clone https://github.com/hetao29/sphinx.git sphinx-chinese
+$ cd sphinx-chinese
+$ git checkout rel22-chinese
+$ ./configure --prefix=/tmp/sphinx_bin/ --without-mysql --with-scws=/tmp/scws/
+$ make 
+$ make install
 ```
+
+## 测试
+
 ## 配置sphinx
 具体的手册说明参考 http://www.xunsearch.com/scws/docs.php 
 ```bash
