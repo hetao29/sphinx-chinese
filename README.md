@@ -27,10 +27,19 @@ $ make install
 ```
 
 ## 测试
+```bash
+$ cd /tmp
+$ git clone https://github.com/hetao29/sphinx-chinese.git sphinx-test
+$ cd sphinx-test/test
+$ make  #测试
+```
 
 ## 配置sphinx
 具体的手册说明参考 http://www.xunsearch.com/scws/docs.php 
 ```bash
+$ cat /tmp/sphinx-test/test/course.conf
+```
+```sh
 #支持如下4个参数
 #必须设置，开关，注释掉就关掉scws支持
 scws = 1 
