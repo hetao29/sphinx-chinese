@@ -31,6 +31,7 @@ $ make install
 $ cd /tmp
 $ git clone https://github.com/hetao29/sphinx-chinese.git sphinx-test
 $ cd sphinx-test/test
+$ export LD_LIBRARY_PATH=/tmp/scws/lib/
 $ make  #测试
 ```
 
