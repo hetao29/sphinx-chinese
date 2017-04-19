@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sphinx:docset>
+	<sphinx:schema>
+		<sphinx:field name="title"/>
+		<sphinx:field name="user_name"/>
+		<sphinx:field name="descript"/>
+		<sphinx:field name="search_field"/>
+	</sphinx:schema>
+	<sphinx:document id="45">
+		<descript><![CDATA[
+			陈凯歌并不是《无极》的唯一著作权人一部电影的整体版权归电影制片厂所有。 
+			公开课
+]]></descript>
+	</sphinx:document>
+</sphinx:docset>
