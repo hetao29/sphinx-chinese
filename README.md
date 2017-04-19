@@ -27,10 +27,66 @@ $ make install
 ```
 
 ## 测试
+```bash
+$ cd /tmp
+$ git clone https://github.com/hetao29/sphinx-chinese.git sphinx-test
+$ cd sphinx-test/test
+$ export LD_LIBRARY_PATH=/tmp/scws/lib/
+$ make  #测试
+```
 
 ## 配置sphinx
 具体的手册说明参考 http://www.xunsearch.com/scws/docs.php 
 ```bash
+$ cat /tmp/sphinx-test/test/course.conf
+```
+```conf
+source course
+{
+	type			= xmlpipe2
+	xmlpipe_command		=  cat /tmp/course.xml
+	xmlpipe_fixup_utf8	= 1
+}
+index course
+{
+	type			= plain
+	source			= course
+	path			= /tmp/test_chinese
+	scws = 1
+	scws_dict=/tmp/dict.txt
+	scws_rule=/tmp/scws/etc/rules.utf8.ini
+	scws_multi=3
+}
+
+
+indexer
+{
+	mem_limit		= 512M
+}
+
+searchd
+{
+	listen			= 9312
+	log			= /tmp/searchd.log
+	query_log		= /tmp/query.log
+	read_timeout		= 5
+	client_timeout		= 300
+	max_children		= 30
+	pid_file		= /tmp/searchd.pid
+	#max_matches		= 10000
+	seamless_rotate		= 1
+	preopen_indexes		= 1
+	unlink_old		= 1
+	mva_updates_pool	= 1M
+	max_packet_size		= 8M
+	max_filters		= 256
+	max_filter_values	= 4096
+	max_batch_queries	= 32
+	workers			= threads # for RT to work
+}
+```
+```sh
+# 参数说明
 #支持如下4个参数
 #必须设置，开关，注释掉就关掉scws支持
 scws = 1 
