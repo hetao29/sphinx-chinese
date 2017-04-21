@@ -9,7 +9,7 @@ $ cd /tmp
 $ wget http://www.xunsearch.com/scws/down/scws-1.2.1.tar.bz2 
 $ tar xjf scws-1.2.1.tar.bz2 
 $ cd scws-1.2.1
-$ ./configure --prefix=/tmp/scws
+$ ./configure --prefix=/tmp/scws --enable-static #需要静态编译
 $ make 
 $ make install
 $ tree /tmp/scws
@@ -31,7 +31,6 @@ $ make install
 $ cd /tmp
 $ git clone https://github.com/hetao29/sphinx-chinese.git sphinx-test
 $ cd sphinx-test/test
-$ export LD_LIBRARY_PATH=/tmp/scws/lib/
 $ make  #测试
 ```
 
