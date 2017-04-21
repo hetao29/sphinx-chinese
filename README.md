@@ -22,7 +22,8 @@ $ cd /tmp
 $ git clone https://github.com/hetao29/sphinx.git sphinx-chinese
 $ cd sphinx-chinese
 $ git checkout rel22-chinese
-$ ./configure --prefix=/tmp/sphinx_bin/ --without-mysql --with-scws=/tmp/scws/ #如果默认安装就是 --with-scws=/usr/local
+$ #如果默认安装就是 --with-scws=/usr/local
+$ ./configure --prefix=/tmp/sphinx_bin/ --without-mysql --with-scws=/tmp/scws/ 
 $ make 
 $ make install
 ```
