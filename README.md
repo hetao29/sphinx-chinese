@@ -9,6 +9,7 @@ $ cd /tmp
 $ wget http://www.xunsearch.com/scws/down/scws-1.2.1.tar.bz2 
 $ tar xjf scws-1.2.1.tar.bz2 
 $ cd scws-1.2.1
+$ #默认路径(/user/local)就简单的 ./configure --enable-static
 $ ./configure --prefix=/tmp/scws --enable-static #需要静态编译
 $ make 
 $ make install
@@ -21,7 +22,7 @@ $ cd /tmp
 $ git clone https://github.com/hetao29/sphinx.git sphinx-chinese
 $ cd sphinx-chinese
 $ git checkout rel22-chinese
-$ ./configure --prefix=/tmp/sphinx_bin/ --without-mysql --with-scws=/tmp/scws/
+$ ./configure --prefix=/tmp/sphinx_bin/ --without-mysql --with-scws=/tmp/scws/ #如果默认安装就是 --with-scws=/usr/local
 $ make 
 $ make install
 ```
