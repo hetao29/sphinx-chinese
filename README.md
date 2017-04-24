@@ -109,4 +109,4 @@ scws_multi=3
 ```
 # 词库说明
 #生成词库和词库格式说明
-参考  https://github.com/hetao29/sphinx-chinese/test/tools/README.MD
+参考 https://github.com/hetao29/sphinx-chinese/tree/master/tools
