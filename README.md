@@ -104,3 +104,5 @@ scws_rule=/Users/hetal/scws/etc/rules.utf8.ini
 scws_multi=15
     
 ```
+# 词库说明
+参考  https://github.com/hetao29/sphinx-chinese/test/tools/README.MD
