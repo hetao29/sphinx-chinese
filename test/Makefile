@@ -1,5 +1,6 @@
 all:
-	cp dict/dict.utf8.txt /tmp/dict
+	cp ../dict/dict.utf8.txt /tmp/
+	cp ../dict/rules.utf8.ini /tmp/
 	cp course.xml /tmp
 	rm -rf /tmp/test_chinese*
 	/tmp/sphinx_bin/bin/indexer -c course.conf course

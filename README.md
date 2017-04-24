@@ -54,9 +54,9 @@ index course
 	source			= course
 	path			= /tmp/test_chinese
 	scws = 1
-	scws_dict=/tmp/dict.txt
-	scws_rule=/tmp/scws/etc/rules.utf8.ini
-	scws_multi=3
+	scws_dict=/tmp/dict.utf8.txt
+	scws_rule=/tmp/rules.utf8.ini
+	scws_multi=11
 }
 
 
@@ -91,18 +91,22 @@ searchd
 #支持如下4个参数
 #必须设置，开关，注释掉就关掉scws支持
 scws = 1 
-#可选，如果不设置，默认全是单字切分，词典文件，支持3种官方格式
-scws_dict=/Users/hetal/sphinx_new/test/chinese/dict.txt
+#可选，如果不设置，默认全是单字切分，词典文件，请使用文本格式的词库，第一次使用时会自动生成xdb格式并优化
+#可以使用dict目录下的dict.utf8.txt
+scws_dict=/tmp/dict.utf8.txt
 #可选，规则文件
-scws_rule=/Users/hetal/scws/etc/rules.utf8.ini
+#可以使用dict目录下的 rules.utf8.in
+scws_rule=/tmp/rules.utf8.ini
 #可选，默认为0，复合切词，缺省不复合分词。取值由下面几个常量异或组合（也可用 1-15 来表示，就是数字相加，比如3就表示1+2）：
+#推荐3(主要是词组为主)或者11(包含了全部单字)
 #
 # SCWS_MULTI_SHORT   (1)短词
 # SCWS_MULTI_DUALITY (2)二元（将相邻的2个单字组合成一个词）
 # SCWS_MULTI_ZMAIN   (4)重要单字
 # SCWS_MULTI_ZALL    (8)全部单字
-scws_multi=15
+scws_multi=3
     
 ```
 # 词库说明
+#生成词库和词库格式说明
 参考  https://github.com/hetao29/sphinx-chinese/test/tools/README.MD
