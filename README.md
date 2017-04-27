@@ -24,7 +24,7 @@ $ cd sphinx-chinese
 $ #请使用-chinese的分支，目前有2个，master-chinese, rel22-chinese
 $ git checkout rel22-chinese 
 $ #如果默认安装就是 --with-scws=/usr/local
-$ ./configure --prefix=/tmp/sphinx_bin/ --without-mysql --with-scws=/tmp/scws/ 
+$ ./configure --prefix=/tmp/sphinx_bin/ --with-scws=/tmp/scws/ 
 $ make 
 $ make install
 ```
