@@ -8,11 +8,7 @@ $ php dump_xdb_file.php <要导出的.xdb文件> [存入的文本文件]
 
    第二参数省略则直接输出到标准输出。
 
-### 2. 词典生成：make_xdb_file.php 同样是在命令行模式下运行（需要安装 mbstring 扩展）
-   默认是处理 gbk 编码的文本，如果你的文本是 utf8，则需要修改该程序的第一行
-```php
-   define('IS_UTF8_TXT',	false);  改为 true
-```
+### 2. 词典生成：make_xdb_file.php 同样是在命令行模式下运行（需要安装 mbstring 扩展，目前只支持utf8）
 ```bash
 $ php make_xdb_file.php <要生成的.xdb> [导入的文本文件]
 ```
