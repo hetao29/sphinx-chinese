@@ -103,8 +103,11 @@ scws = 1
 # SCWS_XDICT_MEM      2
 # SCWS_XDICT_TXT      4
 
-#可以使用dict目录下的dict.utf8.txt
+#可以使用dict目录下的 dict.utf8.txt 或者 dict.utf8.xdb
 scws_dict=/tmp/dict.utf8.txt
+#可以支持多个字典文件，用空格或者逗号分开，按顺序加载，后面的字典有更高的优先极，可以把自定义字典文件放在后面，比如
+#scws_dict=/tmp/dict.utf8.txt,/tmp/dict.utf8.my.txt
+
 
 #规则文件，可选
 #可以使用dict目录下的 rules.utf8.in
