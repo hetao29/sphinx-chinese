@@ -26,8 +26,6 @@ word、TF、IDF、Attr组成，其中TF是词频系数，IDF是逆词频率系�
 ```
 
 --
+hetal 20170428 ,修正导出的排序问题，同时修正导出时词性显示问题，默认只支持utf8编码
 hightman.20100304: 修正导出时的一个 bug 导致一堆出错信息..
-
-
 hightman 特别制作于 2009.7.1
-下载地址：http://www.ftphp.com/scws 或 www.hightman.cn/bbs 的 scws 版
