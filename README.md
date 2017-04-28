@@ -1,8 +1,8 @@
 # sphinx-chinese
-给官方的 sphinx 增加对中文的支持（目前只支持utf8），基于流行的中文分词插件 https://github.com/hightman/scws
+给官方的 sphinx 增加对中文的支持（目前只支持utf8），基于流行的中文分词插件scws(Simple Chinese Word Segmentation)
 
 # 安装方法
-## 安装scws
+## 安装scws 
 可以参考 https://github.com/hightman/scws 里的安装方法
 ```bash
 $ cd /tmp
