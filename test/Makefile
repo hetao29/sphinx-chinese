@@ -1,5 +1,9 @@
 all:
 	cp -p ../dict/dict.utf8.txt /tmp/
+	cp -p ../dict/dict.utf8.my.txt /tmp/
+	cp -p ../dict/dict.utf8.xdb /tmp/
+	cp -p ../dict/dict.utf8.my.xdb /tmp/
+
 	cp -p ../dict/rules.utf8.ini /tmp/
 	cp -p course.xml /tmp
 	rm -rf /tmp/test_chinese*
