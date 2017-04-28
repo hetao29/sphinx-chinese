@@ -2,7 +2,6 @@
 // make xdb file from plain text dictionary (only support gbk)
 // $Id: $
 
-define('IS_UTF8_TXT',	false);
 ini_set('memory_limit', '1024M');
 set_time_limit(0);
 if (!isset($_SERVER['argv'][1]))
@@ -41,7 +40,7 @@ if (!$xdb->Open($output, 'w'))
 }
 
 // load data
-mb_internal_encoding(IS_UTF8_TXT ? 'UTF-8' : 'gbk');
+mb_internal_encoding('UTF-8');
 $total = 0;
 $rec = array();
 echo "INFO: Loading text file data ... ";
