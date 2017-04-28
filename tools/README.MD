@@ -1,14 +1,15 @@
 ## 纯PHP编写的xdb词典
 (SCWS - http://www.ftphp.com/scws 所采用)导入导出工具！！
 
-### 1. 词典导出：dump_xdb_file.php 在命令行模式下运行
+### 1. 词典导出：dump_xdb_file.php
 ```bash
 $ php dump_xdb_file.php <要导出的.xdb文件> [存入的文本文件]
 ```
 
    第二参数省略则直接输出到标准输出。
 
-### 2. 词典生成：make_xdb_file.php 同样是在命令行模式下运行（需要安装 mbstring 扩展，目前只支持utf8）
+### 2. 词典生成：make_xdb_file.php 
+需要安装 mbstring 扩展，目前只支持utf8
 ```bash
 $ php make_xdb_file.php <要生成的.xdb> [导入的文本文件]
 ```
