@@ -17,7 +17,7 @@ $ php make_xdb_file.php <要生成的.xdb> [导入的文本文件]
 ### 3. 词典格式说明
 关于文本文件的说明，每行一条记录，每条记录由
 word、TF、IDF、Attr组成，其中TF是词频系数，IDF是逆词频率系数，而Attr是北大标注法的词性
-可参考 http://www.xunsearch.com/scws/docs.php#attr ，这四个字段之间用\t隔开。
+可参考 http://www.xunsearch.com/scws/docs.php#attr ，这四个字段之间用制表符(\t)或者空格符( )隔开。
 
 
 ```bash

@@ -47,7 +47,7 @@ echo "INFO: Loading text file data ... ";
 while ($line = fgets($fd, 512))
 {
 	if (substr($line, 0, 1) == '#') continue;
-	list($word, $tf, $idf, $attr) = explode("\t", $line, 4);
+	list($word, $tf, $idf, $attr) = preg_split("/[\t ;,]+/", $line, 4);
 	$k = (ord($word[0]) + ord($word[1])) & 0x3f;
 	$attr = trim($attr);
 
