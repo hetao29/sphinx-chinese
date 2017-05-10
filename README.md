@@ -94,14 +94,10 @@ searchd
 #总开关，必须设置，注释掉就关掉scws支持，任意值都是开启
 scws = 1 
 
+
 #词库设置，可选，如果不设置，默认全是单字切分，请使用utf8格式的词库
 #可以是xdb格式或者文本格式，根据扩展名(.xdb)自动识别
 #如果不是xdb格式的文件，第一次使用时会在/tmp目录自动生成xdb格式并优化，会有一点耗时，后面就不会了
-#词典格式类型说明
-#
-# SCWS_XDICT_XDB      1
-# SCWS_XDICT_MEM      2
-# SCWS_XDICT_TXT      4
 
 #可以使用dict目录下的 dict.utf8.txt 或者 dict.utf8.xdb
 scws_dict=/tmp/dict.utf8.txt
